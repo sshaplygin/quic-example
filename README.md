@@ -1,7 +1,7 @@
 quic-example
 =====
 
-Simple client adn server in pure go by quic-protocol with usega Gin Web framework.
+Simple client and server in pure go by quic-protocol with usage Gin Web framework.
 
 
 Cers and key from [link](https://github.com/lucas-clemente/quic-go/tree/master/internal/testdata)
