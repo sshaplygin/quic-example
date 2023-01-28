@@ -15,16 +15,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	//logWriter, err := utils.GetQLOGWriter()
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
-
-	//tracer := qlog.NewTracer(logWriter)
-	//conf := &quic_go.Config{
-	//	Tracer: tracer,
-	//}
-
 	router := gin.New()
 
 	router.GET("/", func(context *gin.Context) {
@@ -32,7 +22,6 @@ func main() {
 	})
 
 	server := http3.Server{
-		//QuicConfig: conf,
 		Addr:    "127.0.0.1:8080",
 		Handler: router,
 	}
